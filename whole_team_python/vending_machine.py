@@ -7,7 +7,7 @@ class VendingMachine:
         self.chip_price = chip_price
         self.cola_price = cola_price
         self.candy_price = candy_price
-        self.amount  = 0
+        self.amount = 0
 
     def has_product(self, param):
         return None

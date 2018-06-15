@@ -4,7 +4,6 @@ import unittest
 from vending_machine import VendingMachine
 
 
-
 class VendingMachineTests(unittest.TestCase):
     def setUp(self):
         self.machine = VendingMachine(0.5, 1.0, 0.65)
@@ -17,10 +16,10 @@ class VendingMachineTests(unittest.TestCase):
         self.assertEqual(self.machine.get_chips_price(), 0.50)
 
     def test_show_one_as_total_cola(self):
-        self.assertEqual(self.machine.get_cola_price(),1)
+        self.assertEqual(self.machine.get_cola_price(), 1)
 
     def test_show_zero_sixty_five_as_total_candy(self):
-        self.assertEqual(self.machine.get_candy_price(),0.65)
+        self.assertEqual(self.machine.get_candy_price(), 0.65)
 
     def test_coin_accepted(self):
         self.assertTrue(self.machine.insert_coin("NICKELS"))
